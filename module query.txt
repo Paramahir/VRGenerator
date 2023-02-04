@@ -1,0 +1,1 @@
+SELECT * FROM module_master where id = Any (select module_id from module_user_level_master where user_level_id == '$userlevel') order by sequence asc
